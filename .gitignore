@@ -29,7 +29,7 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Configuración de Editores
+# Configuración de Editores e IDEs
 .vscode/*
 !.vscode/extensions.json
 .idea/
