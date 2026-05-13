@@ -21,7 +21,7 @@ yarn-error.log*
 .env.production.local
 .env*.local
 
-# Supabase (archivos temporales del CLI si lo usas)
+# Supabase (deshuso, eliminar a futuro)
 /supabase/.temp
 /supabase/functions/.env
 
@@ -42,5 +42,5 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 
-# Otros archivos
+# Otros archivos de apoyo
 instructions.md
