@@ -21,6 +21,7 @@ class CreateInitialSchema extends Migration
         $this->forge->addField(array_merge([
             'id'     => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
             'nombre' => ['type' => 'VARCHAR', 'constraint' => 100],
+            'logo'   => ['type' => 'VARCHAR', 'constraint' => 255, 'null' => true],
         ], $auditFields));
         $this->forge->addKey('id', true);
         $this->forge->createTable('confederaciones');
@@ -29,6 +30,7 @@ class CreateInitialSchema extends Migration
         $this->forge->addField(array_merge([
             'id'               => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
             'nombre'           => ['type' => 'VARCHAR', 'constraint' => 100],
+            'logo'             => ['type' => 'VARCHAR', 'constraint' => 255, 'null' => true],
             'confederacion_id' => ['type' => 'INT', 'unsigned' => true, 'null' => true],
         ], $auditFields));
         $this->forge->addKey('id', true);
